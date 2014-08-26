@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/benderjs/benderjs-coverage",
   "dependencies": {
-    "istanbul": "^0.3.0",
+    "istanbul": "git://github.com/gregpabian/istanbul.git",
     "mime": "^1.2.11",
     "request": "^2.40.0"
   }
