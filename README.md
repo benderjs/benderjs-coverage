@@ -32,13 +32,13 @@ var config = {
 module.exports = config;
 ```
 
-Add coverage configuration:
+Add the coverage plugin configuration:
 
 ```js
 var config = {
     applications: {...},
 
-    // add your coverage configuration
+    // add your plugin configuration
     coverage: {
         paths: [
             'lib/**/*.js'
@@ -62,21 +62,21 @@ module.exports = config;
 *(Required)*
 
 An array of file path matchers used to mark which files should be preprocessed by this plugin.
-It provides globstar matching using [minimatch](https://github.com/isaacs/minimatch).
+It uses globstar matching using [minimatch](https://github.com/isaacs/minimatch).
 
 ### outputDirectory
 
 *(Optional)*
 
-**Default:** 'coverage/'
+**Default:** coverage/
 
-A path to the directory where the coverage reports will be put.
+A path to the directory where the coverage reports for `bender run` command will be put.
 
 ### type
 
 *(Optional)*
 
-**Default:** 'html'
+**Default:** html
 
 A type of the coverage report. Check [Istanbul website](http://gotwarlost.github.io/istanbul/) for available values.
 
