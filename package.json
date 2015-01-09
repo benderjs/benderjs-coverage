@@ -4,6 +4,7 @@
 	"description": "Code coverage plugin for Bender.js",
 	"main": "lib/index.js",
 	"scripts": {
+		"lint": "jscs . && jshint lib/",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -27,5 +28,9 @@
 		"istanbul": "git://github.com/gregpabian/istanbul.git",
 		"mime": "^1.2.11",
 		"request": "^2.40.0"
+	},
+	"devDependencies": {
+		"jscs": "^1.9.0",
+		"jshint": "^2.5.11"
 	}
 }
